@@ -1,0 +1,17 @@
+public class singleobject{
+    private static singleobject instance= new singleobject();
+
+public static singleobject getIntance(){
+    return instance;
+}
+public void show(){
+    System.out.println("Hello world");
+}
+}
+public class Singleton{
+    public static void main(String [] args){
+        singleobject object = singleobject.getIntance();
+
+        object.show();
+    }
+}
