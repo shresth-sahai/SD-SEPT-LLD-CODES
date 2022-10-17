@@ -1,0 +1,63 @@
+public interface Item{
+    public String name();
+    public Packing packing();
+    public float price();
+}
+public interface packing{
+    public String pack();
+}
+public class Wrapper implements packing{
+    public  string pack(){
+        return "wrapper";
+    }
+}
+public class bottle implements packing{
+    public  string pack(){
+        return "bottle";
+    }
+}
+public abstract class burger implements Item{
+    public Packing packing(){
+
+    }
+    public abstract float price();
+}
+public abstract class coldrink implements Item{
+    public Packing packing(){
+
+    }
+    public abstract float price();
+}
+public class vegburger extends burger{
+
+
+
+}
+public class nonvegburger extends burger{
+
+
+    
+}
+public class pepsi extends coldrink{
+
+
+    
+}
+public class mealbuilder{
+
+    public Meal preparevegmeal(){
+
+        meal meal =new meal();
+
+    }
+     public Meal preparenonvegmeal(){
+
+        meal meal =new meal();
+        
+    }
+}
+public class builder{
+    public static void main(string[ ] args){
+        
+    }
+}
