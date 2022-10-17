@@ -1,0 +1,39 @@
+public interface mediaplayer{
+    public void play(string audiotype,string filename);
+}
+public interface advancedmediaplayer{
+    public void playvlc(string filename);
+    public void playmp4(string filename);
+}
+public class vlcplayer implements advancedmediaplayer{
+
+    public void playvlc(string filename){
+
+    }
+     public void playmp4(string filename){
+        
+    }
+}
+public class mp4player implements advancedmediaplayer{
+
+      public void playvlc(string filename){
+
+    }
+     public void playmp4(string filename){
+        
+    }
+}
+//adapter pattern
+public class mediadapter implements mediaplayer{
+    
+    public class mediadapter(string audiotype){
+        if(audiotype=="mp3") advancedmediaplayer=new vlcplayer();
+            if(audiotype=="mp4") advancedmediaplayer=new mp4player();
+    }
+    public void play(){
+        if(audiotype=="mp3") advancedmediaplayer.playvlc();
+          if(audiotype=="mp4") advancedmediaplayer.playmp4();
+
+    }
+
+}
