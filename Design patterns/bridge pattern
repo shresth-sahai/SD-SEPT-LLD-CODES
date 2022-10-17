@@ -1,0 +1,28 @@
+public interface drawapi{
+    public void drawcircle(int radius,int x,int y){
+
+    }
+}
+public class redcircle implements drawapi{
+    public void drawcircle(){
+
+    }
+}
+public class greencircle implements drawapi{
+    public void drawcircle(){
+
+    }
+}
+public abstract class  Shape{
+    public shape(){
+
+    }
+}
+public class circle extends shape{
+
+}
+public bridgepattern{
+    public static void main(string[] args){
+        
+    }
+}
