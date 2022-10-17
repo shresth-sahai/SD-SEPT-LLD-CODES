@@ -1,0 +1,38 @@
+public interface Shape{
+    void draw();
+}
+public class Rectangle implements Shape{
+    public void draw(){
+        System.out.println("draw rectangle here")
+    }
+}
+public class Square implements Shape{
+    public void draw(){
+        System.out.println("draw rectangle here")
+    }
+}
+public class circle implements Shape{
+    public void draw(){
+        System.out.println("draw rectangle here")
+    }
+}
+public class ShapeFactory{
+    public Shape getShape(String shapeType){
+        if (shapeType==null) return null;
+
+        if( shapeType=="circle") return new circle();
+
+         if( shapeType=="rectangle") return new rectangle();
+
+        if( shapeType=="square") return new square();
+    }
+}
+
+public class FactoryPattern{
+    public static void main(String [] args){
+       
+        ShapeFactory shapeFactory= new ShapeFactory();
+        Shape shape1=shapeFactory.getShape("circle");
+        shape1.draw();
+    }
+}
