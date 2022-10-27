@@ -1,0 +1,95 @@
+enum OrderStatus{
+    Cancelled,active ,closed;
+
+}
+enum paymentstatus{
+    unpaid
+}
+class Person{
+    public String name,email,phone;
+
+    public Address address;
+
+    public Person(){
+
+    }
+}
+class Address{
+    pubclic String street;
+    //write the constructor
+}
+class customer extends Person{
+    ArrayList<order> orders;
+    public void addOrders(Order order){
+
+
+    }
+     public boolean recOrders(Order order){
+
+
+    }
+}
+class delguy extends Person{
+    ArrayList<order> dels;
+    public void adddel(Order order){
+
+
+    }
+     public boolean delitem(Order order){
+
+
+    }
+}
+class Restaurent{
+
+    public String name;
+    public ArrayList<Branch> branches;
+    //contructor
+
+    public void addBranch(Branch branch){
+
+    }
+}
+class Branch extends Restaurent{
+     public String name;
+}
+class Menu{
+    public String menuId;
+    public ArrayList<FoodItem> menu=new ArrayList<FoodItem> ();
+    Menu(string id){
+        this.menuId=id;
+    }
+    pubclic void addFood(FoodItem dish){
+        this.menu.add(dish);
+    }
+}
+class FoodItem{
+    pubclic String name,id,description;
+    pubclic int cost;
+
+    //constructor
+
+    pubclic void updatePrice(int cost){
+        this.name=cost;
+    }
+
+}
+//class order
+
+//class sytem
+class System{
+    pubclic HashMap<Customer,ArrayList<order> > customerDb;
+     pubclic HashMap<Delguy,ArrayList<order> > customerDb;
+     pubclic ArrayList<order> getcustomer(customer customer{
+         return customerDb.get(customer);
+
+     }
+       pubclic ArrayList<order> getcustomer(customer customer{
+         return customerDb.get(customer);
+
+     }
+       pubclic void addcustomer(customer customer{
+         return customerDb.get(user).add(order);
+
+     }
+}
