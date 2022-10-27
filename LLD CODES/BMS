@@ -1,0 +1,92 @@
+// class ticket {
+    public class Ticket {
+        private int id;
+        private String owner;
+        private Date date;
+        private Show bookedShow;
+        private int noofseats;
+
+        // getter and setters
+    }
+
+//90 pecent ---> user ---> abstract in nature 
+pubclic abstract class user{
+    private static int idcounter=0;
+    private int id;
+    private String name;
+
+    public User (String name){
+        idcounter+=1;
+        this.name=name;
+        this.id=id;
+    }
+}
+//classes of users
+//guest user
+pubclic class GuestUser extends user{
+    public GuestUser(){
+
+    }
+    // function--> register function
+    public void register(String username,String password){
+
+    }
+
+}
+
+public class BookMyShow{
+    ArrayList<Threater> threaters;
+    static Hashmap<String,ArrayList<Show>> movieMap;
+
+    private void genMovMap(){
+        for(Threater threater:threaters ){
+            ArrayList<Show> showArray=threater.shows();
+            if(show!=null){
+                if(movieMap.contains(show.getMovie().getName())){
+                    movieMap.get(show.getMovie().getName()).add(show);
+                }
+                else{ ArrayList<Show> showArrayList=new ArrayList<> ();
+                showArrayList.add(show);
+                movieMap.put(show.getMovie().getName,showArrayList);
+
+                }
+            }
+        }
+    }
+    private static ArrayList<show> searchShow(){
+        if(movieMap.containskey(moviename) ) return above;
+        else return null;
+    }
+}
+//registered user
+public class registerUser extends user{
+    ArrayList<Ticket> bookingHistory;
+    //constructor
+
+    public void cancelTicket(Ticket ticket){
+
+    }
+}public class BookMyShow{
+    ArrayList<Threater> threaters;
+    static Hashmap<String,ArrayList<Show>> movieMap;
+
+    private void genMovMap(){
+        for(Threater threater:threaters ){
+            ArrayList<Show> showArray=threater.shows();
+            if(show!=null){
+                if(movieMap.contains(show.getMovie().getName())){
+                    movieMap.get(show.getMovie().getName()).add(show);
+                }
+                else{ ArrayList<Show> showArrayList=new ArrayList<> ();
+                showArrayList.add(show);
+                movieMap.put(show.getMovie().getName,showArrayList);
+
+                }
+            }
+        }
+    }
+    private static ArrayList<show> searchShow(){
+        if(movieMap.containskey(moviename) ) return above;
+        else return null;
+    }
+}
