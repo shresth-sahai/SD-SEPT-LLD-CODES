@@ -1,0 +1,29 @@
+class TopVotedCandidate {
+TreeMap<Integer,Integer> map=new TreeMap<>();
+    
+    public TopVotedCandidate(int[] persons, int[] times) {
+   HasMapMap<Integer,Integer> count=new HashMap<>();   
+        int hc=0,hp=0;
+        for(int i=0;i<persons.length;i++){
+            int p=persons[i];
+            int curr=count.get(p);
+            count.put(p,curr=null?1:curr+1);
+            
+            if(count.get(p)>=hc){
+                hc=count.get(p);
+                hp=p;
+            }
+            mp.put(times[i],hp);
+        }
+    }
+    
+    public int q(int t) {
+        return map.get(map.floorKey(t));//--> return the gretest key less than or equal
+    }
+}
+
+/**
+ * Your TopVotedCandidate object will be instantiated and called as such:
+ * TopVotedCandidate obj = new TopVotedCandidate(persons, times);
+ * int param_1 = obj.q(t);
+ */
